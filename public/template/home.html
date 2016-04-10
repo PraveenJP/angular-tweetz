@@ -1,6 +1,6 @@
 <div ng-include="'template/header.html'"></div>
 <div ng-include="'template/menu.html'" layout="vertical"></div>
-<div layout="row">
+<div layout="row" layout-sm="column">
 	<div flex="30">
 		<md-content class="trans">
 			<md-card>
@@ -35,63 +35,13 @@
 		        <md-divider ></md-divider>
 				<md-card-content>
 			        <md-content class="cus_height">
-				      	<md-list flex>
+				      	<md-list ng-repeat="msg in message track by $index" flex>
 				        	<md-list-item class="md-3-line">
 				          		<img ng-src="img/60.jpeg" class="md-avatar" />
 						        <div class="md-list-item-text">
-						            <h3>Praveen</h3>
+						            <h3>{{msg.name}}</h3>
 						            <p>
-						              Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam.
-						              Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
-						              velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-						            </p>
-						        </div>
-						        <md-divider ></md-divider>
-				        	</md-list-item>
-				        	<md-list-item class="md-3-line">
-				          		<img ng-src="img/60.jpeg" class="md-avatar" />
-						        <div class="md-list-item-text">
-						            <h3>Praveen</h3>
-						            <p>
-						              Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam.
-						              Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
-						              velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-						            </p>
-						        </div>
-						        <md-divider ></md-divider>
-				        	</md-list-item>
-				        	<md-list-item class="md-3-line">
-				          		<img ng-src="img/60.jpeg" class="md-avatar" />
-						        <div class="md-list-item-text">
-						            <h3>Praveen</h3>
-						            <p>
-						              Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam.
-						              Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
-						              velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-						            </p>
-						        </div>
-						        <md-divider ></md-divider>
-				        	</md-list-item>
-				        	<md-list-item class="md-3-line">
-				          		<img ng-src="img/60.jpeg" class="md-avatar" />
-						        <div class="md-list-item-text">
-						            <h3>Praveen</h3>
-						            <p>
-						              Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam.
-						              Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
-						              velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-						            </p>
-						        </div>
-						        <md-divider ></md-divider>
-				        	</md-list-item>
-				        	<md-list-item class="md-3-line">
-				          		<img ng-src="img/60.jpeg" class="md-avatar" />
-						        <div class="md-list-item-text">
-						            <h3>Praveen</h3>
-						            <p>
-						              Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam.
-						              Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
-						              velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+						              {{msg.text}}
 						            </p>
 						        </div>
 						        <md-divider ></md-divider>
@@ -100,12 +50,12 @@
 				    </md-content>    
 			    </md-card-content>
 			    <md-divider ></md-divider>
-			    <form name="messageForm">
+			    <form name="messageForm" ng-submit="sendMsg()">
 		    		<div layout-gt-sm="row" layout-padding>
 			    		<md-input-container class="md-block md-icon-left" flex-gt-xs>
 			    		 	<md-icon class="icon ion-email"></md-icon>
 			    		 	<label>Message</label>
-			    		 	<input type="text" ng-required="true">
+			    		 	<input type="text" ng-model="message.text" ng-required="true">
 			    		</md-input-container>
 			    		<md-input-container>
 		          			<md-button class="md-warn" type="submit"><i class="icon ion-android-send"></i></md-button>

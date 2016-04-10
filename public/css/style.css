@@ -17,8 +17,8 @@ md-list .md-button {
 	font-size: 25px;
 }
 .cus_height{
-	max-height: 300px;
-	height: auto;
+	height: 300px;
+	/*height: auto;*/
 	overflow-y: scroll;
 }
 .cus_center{
