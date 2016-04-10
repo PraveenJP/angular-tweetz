@@ -15,6 +15,7 @@
     "angular-material": "^1.0.7",
     "angular-messages": "^1.5.3",
     "angular-ui-router": "^0.2.18",
+    "angularjs-scroll-glue": "^2.0.4",
     "express": "^4.13.4",
     "socket.io": "^1.4.5"
   },

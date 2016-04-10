@@ -1,5 +1,5 @@
 'use strict';
-var app = angular.module('app',['ui.router','ngMaterial']);
+var app = angular.module('app',['ui.router','ngMaterial','luegg.directives']);
 
 app.config(function($stateProvider,$urlRouterProvider,$mdThemingProvider) {
 	 $mdThemingProvider.theme('default')
