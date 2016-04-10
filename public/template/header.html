@@ -1,6 +1,5 @@
  <md-toolbar ng-controller="navCtrl">
       <div class="md-toolbar-tools">
-        <!--<md-button hide-gt-sm ng-click="vm.toggleSidenav()" class="md-icon-button">-->
         <md-button ng-click="toggleLeft()" class="md-icon-button">
           <i class="icon ion-android-menu"></i> 
         </md-button>
@@ -9,3 +8,28 @@
         </h2>
       </div>
  </md-toolbar>
+
+  <!-- <md-toolbar class="md-menu-toolbar">
+    <div layout="row">
+        <md-toolbar-filler layout layout-align="center center">
+            <i class="icon ion-chatbubbles"></i>
+        </md-toolbar-filler>
+        <div>
+            <h2 class="md-toolbar-tools">Tweetz</h2>
+            <md-menu-bar>
+              <md-menu>
+                <button ng-click="$mdOpenMenu()" class="md-button" ui-sref="home">
+                  Home
+                </button>
+                 <md-menu-content></md-menu-content>
+              </md-menu>
+              <md-menu>
+                <button ng-click="$mdOpenMenu()" class="md-button" ui-sref="about">
+                  About
+                </button>
+                <md-menu-content></md-menu-content>
+              </md-menu>
+            </md-menu-bar>
+        </div>
+    </div>
+  </md-toolbar> -->

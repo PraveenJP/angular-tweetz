@@ -3,16 +3,19 @@
     class="md-sidenav-left"
     md-component-id="left"
     md-disable-backdrop
+    md-is-locked-open="$mdMedia('gt-md')"
     md-whiteframe="4">
   <md-toolbar class="md-theme-indigo">
-    <h1 class="md-toolbar-tools">Online</h1>
+    <h1 class="md-toolbar-tools">Menu</h1>
   </md-toolbar>
   <md-content layout-padding>
     <md-list>
         <md-list-item>
             <md-button ui-sref="home">
-                Home
+                Chat Room
             </md-button>            
+        </md-list-item>
+        <md-list-item>
             <md-button ui-sref="about">
                 About
             </md-button>
@@ -20,3 +23,4 @@
     </md-list>
   </md-content>
 </md-sidenav>
+

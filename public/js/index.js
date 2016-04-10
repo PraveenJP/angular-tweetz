@@ -1,7 +1,11 @@
 'use strict';
 var app = angular.module('app',['ui.router','ngMaterial']);
 
-app.config(function($stateProvider,$urlRouterProvider) {
+app.config(function($stateProvider,$urlRouterProvider,$mdThemingProvider) {
+	 $mdThemingProvider.theme('default')
+    .primaryPalette('pink')
+    .accentPalette('orange');
+
 	$stateProvider
 	.state('home',{
 		url:'/home',
