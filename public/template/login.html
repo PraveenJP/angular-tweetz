@@ -8,7 +8,7 @@
 <div layout="row" layout-align="center center">
     <div flex="33">
         <md-card>
-            <md-card-title class="md-primary">
+            <md-card-title class="cus_center">
                 <h2 align="center">Login</h2>
             </md-card-title>
             <md-divider ></md-divider>
@@ -24,7 +24,9 @@
                         <input ng-model="login.roomname" name="roomname" type="text" ng-required="true"/>
                     </md-input-container>
                 </md-content>
-                <md-button type="submit" class="md-raised md-primary right">Start</md-button>
+                <div style="text-align:right">
+                    <md-button type="submit" class="md-raised md-primary right">Start</md-button>
+                </div>
                 </form>
             </md-card-content>
         </md-card>

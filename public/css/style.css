@@ -21,6 +21,9 @@ md-list .md-button {
 	height: auto;
 	overflow-y: scroll;
 }
+.cus_center{
+	margin:auto;
+}
 ::-webkit-scrollbar-track
 {
     /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
