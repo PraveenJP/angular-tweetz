@@ -6,6 +6,25 @@
         <h2>
           <span>Tweetz</span>
         </h2>
+        <md-fab-speed-dial
+            md-direction="down"
+            class="md-fling md-fab-top-right">
+            <md-fab-trigger>
+                <md-button class="md-fab">
+                    <i class="icon ion-android-funnel"></i>
+                </md-button>
+            </md-fab-trigger>
+            <md-fab-actions>
+                <md-button class="md-fab md-raised md-mini" ng-click="vm.contactForm($event)">
+                    <i class="icon ion-android-refresh"></i>
+                    <md-tooltip md-direction="left">Clear Message</md-tooltip>
+                </md-button>
+                <md-button class="md-fab md-raised md-mini" ng-click="vm.clearNotes($event)">
+                    <i class="icon ion-log-out"></i>
+                    <md-tooltip md-direction="left">Logout</md-tooltip>
+                </md-button>
+            </md-fab-actions>
+        </md-fab-speed-dial>
     </div>
 </md-toolbar>
 
