@@ -1,0 +1,32 @@
+<md-toolbar ng-controller="navCtrl" md-whiteframe="2" >
+    <div class="md-toolbar-tools">
+        <h2>
+          <span>Tweetz Login</span>
+        </h2>
+    </div>
+</md-toolbar>
+<div layout="row" layout-align="center center">
+    <div flex="33">
+        <md-card>
+            <md-card-title class="md-primary">
+                <h2 align="center">Login</h2>
+            </md-card-title>
+            <md-divider ></md-divider>
+            <md-card-content>
+                <form name="loginName" ng-submit="startChart(login)">
+                <md-content layout="column" layout-padding>
+                    <md-input-container class="md-block">
+                        <label>User Name</label>
+                        <input ng-model="login.username" name="username" type="text" ng-required="true"/>
+                    </md-input-container>
+                    <md-input-container class="md-block">
+                        <label>Room Name</label>
+                        <input ng-model="login.roomname" name="roomname" type="text" ng-required="true"/>
+                    </md-input-container>
+                </md-content>
+                <md-button type="submit" class="md-raised md-primary right">Start</md-button>
+                </form>
+            </md-card-content>
+        </md-card>
+    </div>
+</div>

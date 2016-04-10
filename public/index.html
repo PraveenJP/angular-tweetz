@@ -9,11 +9,9 @@
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,600' rel='stylesheet' type='text/css'>
 </head>
-<body layout="row" ng-cloak ng-app="app">
-	<div ng-include="'template/menu.html'" layout="vertical"></div>
+<body class="bg-pattern" layout="row" ng-cloak ng-app="app">
 
 	<div layout="column" flex id="wrapper">
-		<div ng-include="'template/header.html'"></div>
 		<div ui-view></div>
 	</div>
 

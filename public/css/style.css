@@ -1,5 +1,11 @@
-html, body{
+body{
 	font-family: 'Josefin Sans', sans-serif;
+}
+.bg-pattern{
+	background: url(../img/bg.jpg) repeat;
+}
+.trans{
+	background: transparent;
 }
 md-list .md-button {
   color: inherit;
@@ -11,7 +17,8 @@ md-list .md-button {
 	font-size: 25px;
 }
 .cus_height{
-	height: 330px;
+	max-height: 300px;
+	height: auto;
 	overflow-y: scroll;
 }
 ::-webkit-scrollbar-track

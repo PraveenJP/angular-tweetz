@@ -1,6 +1,8 @@
+<div ng-include="'template/header.html'"></div>
+<div ng-include="'template/menu.html'" layout="vertical"></div>
 <div layout="row">
 	<div flex="30">
-		<md-content>
+		<md-content class="trans">
 			<md-card>
 		        <md-card-title>
 		          	<md-card-title-text>
@@ -19,7 +21,7 @@
 		</md-content>
 	</div>
 	<div flex>
-		<md-content>
+		<md-content class="trans">
 			<md-card>
 				<md-card-title>
 					<md-card-title-text>
@@ -105,7 +107,7 @@
 			    		 	<input type="text" ng-required="true">
 			    		</md-input-container>
 			    		<md-input-container>
-		          			<md-button class="md-warn" type="submit"><i class="ion-android-send"></i> Send</md-button>
+		          			<md-button class="md-warn" type="submit"><i class="icon ion-android-send"></i></md-button>
 		          		</md-input-container>
 	          		</div>
 	          	</form>
