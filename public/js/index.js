@@ -25,7 +25,7 @@ app.config(function($stateProvider,$urlRouterProvider,$mdThemingProvider) {
 	$urlRouterProvider.otherwise('/login');
 });
 
-app.controller('navCtrl', function ($scope, $mdSidenav) {
+app.controller('navCtrl', function ($scope, $mdSidenav, $timeout) {
 	var self = this;
     self.hidden = false;
     self.isOpen = false;
@@ -59,8 +59,8 @@ app.controller('loginCtrl',function($scope,$state){
 });
 
 app.controller('chatCtrl', function($scope,$stateParams){
-	var name = $stateParams.name;
-	var room = $stateParams.room;	
+	$scope.name = $stateParams.name;
+	$scope.room = $stateParams.room;	
 });
 
 app.controller('aboutCtrl', function($scope){
