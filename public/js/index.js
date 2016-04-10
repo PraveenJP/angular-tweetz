@@ -22,4 +22,8 @@ app.controller('navCtrl', function ($scope, $mdSidenav) {
     $scope.toggleLeft = function(){
     	$mdSidenav('left').toggle();    	
     } 
+
+    $scope.closeNav = function(){
+    	$mdSidenav('left').close();
+    }
 });  

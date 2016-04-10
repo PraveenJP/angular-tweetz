@@ -3,21 +3,20 @@
     class="md-sidenav-left"
     md-component-id="left"
     md-disable-backdrop
-    md-is-locked-open="$mdMedia('gt-md')"
     md-whiteframe="4">
-  <md-toolbar class="md-theme-indigo">
-    <h1 class="md-toolbar-tools">Menu</h1>
+  <md-toolbar class="md-theme-indigo" md-whiteframe="2">
+    <h1 class="md-toolbar-tools"><i class="icon ion-grid"></i>&nbsp;Menu</h1>
   </md-toolbar>
-  <md-content layout-padding>
+  <md-content layout-padding ng-controller="navCtrl">
     <md-list>
         <md-list-item>
-            <md-button ui-sref="home">
-                Chat Room
+            <md-button ui-sref="home" ng-click="closeNav()">
+                <h2><i class="icon ion-android-chat"></i>&nbsp;Chat Room</h2>
             </md-button>            
         </md-list-item>
         <md-list-item>
-            <md-button ui-sref="about">
-                About
+            <md-button ui-sref="about" ng-click="closeNav()">
+                <h2><i class="icon ion-information-circled"></i>&nbsp;About</h2>
             </md-button>
         </md-list-item>
     </md-list>
