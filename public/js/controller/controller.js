@@ -1,3 +1,18 @@
+app.controller('navCtrl', function ($scope, $mdSidenav, $timeout) {
+
+    $scope.toggleLeft = function(){
+    	$mdSidenav('left').toggle();    	
+    } 
+
+    $scope.closeNav = function(){
+    	$mdSidenav('left').close();
+    }
+
+    $scope.clearMessage = function(){
+    	$scope.message = [];
+    }
+});  
+
 app.controller('loginCtrl',function($scope,$state){
 	$scope.startChart = function(login){
 		$state.go('home',{

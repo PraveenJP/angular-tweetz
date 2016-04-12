@@ -23,6 +23,11 @@ md-list .md-button {
 }
 .cus_center{
 	margin:auto;
+	padding: none;
+}
+.cus_img{
+	width: 30%;
+	margin:auto;
 }
 ::-webkit-scrollbar-track
 {

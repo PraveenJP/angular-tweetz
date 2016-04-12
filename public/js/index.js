@@ -24,14 +24,3 @@ app.config(function($stateProvider,$urlRouterProvider,$mdThemingProvider) {
 	})
 	$urlRouterProvider.otherwise('/login');
 });
-
-app.controller('navCtrl', function ($scope, $mdSidenav, $timeout) {
-
-    $scope.toggleLeft = function(){
-    	$mdSidenav('left').toggle();    	
-    } 
-
-    $scope.closeNav = function(){
-    	$mdSidenav('left').close();
-    }
-});  
